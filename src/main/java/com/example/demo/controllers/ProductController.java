@@ -19,9 +19,11 @@ public class ProductController {
 
         productList.add(new Product("Оплачиваемый выходной", 1000, "Дополнительный выходной, оплачиваемый компанией", "Screenshot_1.png"));
         productList.add(new Product("Akropole card на 50 EUR", 500, "Карточка на шоппинг в Akropole на 50 EUR", "Screenshot_2.png"));
-        productList.add(new Product("Поход в бар со своим ПМ", 1500, "Возможность сходить в бар со своим ПМ", "Screenshot_3.png"));
+        productList.add(new Product("Поход в бар со своим ПМ", 1500, "Возможность сходить в бар со своим Проджект Менеджером", "Screenshot_3.png"));
+        productList.add(new Product("Summer Office", 6000, "Возможность отправиться работать на Кипр на месяц", "Screenshot_6.png"));
         productList.add(new Product("Осознанный выбор", 3000, "Возможность самому выбирать себе таски весь следующий спринт", "Screenshot_4.png"));
         productList.add(new Product("Билеты в кино", 300, "Билеты в кино на двух персон", "Screenshot_5.png"));
+        productList.add(new Product("Бесплатная пицца", 1000, "Пицца на дом за счет работодателя", "Screenshot_7.png"));
 
         model.addAttribute("product", productList);
 

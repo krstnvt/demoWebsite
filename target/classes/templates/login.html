@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+    <link th:href="@{/styles.css}" rel="stylesheet"/>
 </head>
 <body>
-
+<style>
+  body {
+    background-image: url("images/background-login.png");
+    background-size: cover;
+  }
+</style>
 <form action="" method="post">
   <div class="container">
-    <label><b>Username</b></label>
+    <h1 style="color:white;">Login to your AGC Soft account</h1>
+    <label class="loginFields"><h2>Email (AGC Soft)</h2></label><br>
     <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label><b>Password</b></label>
+    <br>
+    <label class="loginFields"><h2>Password</h2></label><br>
     <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <br>
+    <button type="submit" class="custom-btn btn-6">Login</button>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+  <div class="container">
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>

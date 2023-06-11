@@ -17,7 +17,7 @@ body {
 }
 
 .custom-btn {
-  width: 130px;
+  width: 250px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
@@ -36,7 +36,7 @@ body {
 }
 .btn-6 {
   background: rgb(247,150,192);
-background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgb(118 121 241) 100%);
   line-height: 42px;
   padding: 0;
   border: none;
@@ -70,9 +70,10 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
   transition: all 500ms ease;
 }
 .btn-6:hover{
-  background: transparent;
-  color: #76aef1;
+  background: radial-gradient(circle, rgb(118 121 241) 0%, rgba(247,150,192,1) 100%);
+  color: white;
   box-shadow: none;
+  font-weight: 700;
 }
 .btn-6:hover:before {
   transition: all 500ms ease;
@@ -146,6 +147,41 @@ nav ul li a {
 
 div .bannerText {
   position: absolute;
-  top: 0;
-  left: 0;
+  color: white;
+  top: 40%;
+  left: 5%;
+}
+
+.container {
+  text-align: right;
+  padding: 10px;
+  margin: 10px;
+}
+
+input {
+    margin-left:50%;
+    display: block;
+    width: 50%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.loginFields {
+    color:white;
+    font-family: Georgia, serif;
+}
+
+.psw {
+    font-family: Georgia, serif;
+    color: white;
 }
