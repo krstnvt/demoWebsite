@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<nav>
+    <ul>
+        <li><img src="/images/logo.svg" style="width: 50%; height: auto;"></li>
+        <li><a th:text="'Hello, ' + ${firstName}"></a></li>
+        <li><a th:text="'Balance ' + ${balance}"></a></li>
+        <li><a href="">Log out</a></li>
+    </ul>
+</nav>
+<div class="banner">
+    <img width="100%" src="/images/banner.jpg" alt="main banner">
+    <h1 class="bannerText">Earn AGC Points<br> - the best motivational currency in the world and enjoy the rewards!</h1>
+</div>
+<!--<div class="card">
+    <img th:src="@{${'/images/' + product.imageName}}" alt="Denim Jeans" style="width:100%">
+    <h1 th:text="${product.name}"></h1>
+    <p class="price" th:text="${#numbers.listFormatCurrency(product.price)}"></p>
+    <p>Some text about the jeans..</p>
+    <p><button>Add to Cart</button></p>
+</div>-->
+<!--<div class="card"> -->
+<div class="card" th:each="products:${product}">
+    <img th:src="@{${'/images/' + products.imageName}}" style="width:200px">
+    <h1 th:text="${products.name}"></h1>
+    <p class="description" th:text="${products.description}"></p>
+    <p class="price" th:text="${products.price} + ' AGC Points'"></p>
+    <p><button class="custom-btn btn-6">Add to Cart</button></p>
+</div>
+</body>
+</html>
